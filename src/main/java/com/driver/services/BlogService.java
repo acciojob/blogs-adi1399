@@ -27,8 +27,8 @@ public class BlogService {
 
         User user = userRepository1.findById(userId).get();
         Blog blog = new Blog(user,title,content);
-        blog.setPubDate(new Date1());
-        userRepository1.save(user1);
+        blog.setPubDate(new Date());
+        userRepository1.save(user);
         user.getBlogList().add(blog);
         return blog;
 
